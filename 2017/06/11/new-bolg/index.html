@@ -11,10 +11,12 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/11/new-bolg/index.html">
 <meta property="og:site_name" content="Yilia">
 <meta property="og:description" content="Github Page可以理解为一个服务器，Hexo可以理解会博客的样式外壳。用Hexo + Github Page构建个人博客首先要在GitHub上获得一个特殊的资源池。 初始化Github Page按照Github Page官方网站的5个步骤，就可以在对应的http://username.github.io下访问自己的博客了。但是这个博客非常的简单原始，所以需要用一个比较漂亮的主题给自己的博客">
-<meta property="og:updated_time" content="2017-06-12T14:38:12.000Z">
+<meta property="og:image" content="http://yoursite.com/2017/06/11/new-bolg/qian.jpeg">
+<meta property="og:updated_time" content="2017-07-01T12:48:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何用Hexo + Github Page快速构建个人博客">
 <meta name="twitter:description" content="Github Page可以理解为一个服务器，Hexo可以理解会博客的样式外壳。用Hexo + Github Page构建个人博客首先要在GitHub上获得一个特殊的资源池。 初始化Github Page按照Github Page官方网站的5个步骤，就可以在对应的http://username.github.io下访问自己的博客了。但是这个博客非常的简单原始，所以需要用一个比较漂亮的主题给自己的博客">
+<meta name="twitter:image" content="http://yoursite.com/2017/06/11/new-bolg/qian.jpeg">
   
     <link rel="alternate" href="/atom.xml" title="Yilia" type="application/atom+xml">
   
@@ -56,9 +58,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -89,7 +91,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Github Page可以理解为一个服务器，Hexo可以理解会博客的样式外壳。<br>用Hexo + Github Page构建个人博客首先要在GitHub上获得一个特殊的资源池。</p>
+        <p><img src="/2017/06/11/new-bolg/qian.jpeg" alt="page-logo"><br>Github Page可以理解为一个服务器，Hexo可以理解会博客的样式外壳。<br>用Hexo + Github Page构建个人博客首先要在GitHub上获得一个特殊的资源池。</p>
 <h2 id="初始化Github-Page"><a href="#初始化Github-Page" class="headerlink" title="初始化Github Page"></a>初始化Github Page</h2><p>按照<a href="https://pages.github.com/" target="_blank" rel="external">Github Page</a>官方网站的5个步骤，就可以在对应的<a href="https://yiliayouyou.github.io/" target="_blank" rel="external">http://username.github.io</a>下访问自己的博客了。<br>但是这个博客非常的简单原始，所以需要用一个比较漂亮的主题给自己的博客穿上新衣。</p>
 <p>如果对自己的博客要求不是很多，只要静态网站就可以满足的话，建议使用Hexo或Jeklly。<br>外貌协会在决定前先过了一遍这两个博客平台的主题们，感觉Hexo看着更舒服一些，就决定用Hexo了。</p>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>在安装Hexo之前，先确保<a href="https://nodejs.org/en/download/" target="_blank" rel="external">node.js</a>的环境。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g #全局安装hexo</div><div class="line">hexo init blog #在需要新建博客的文件夹下初始化博客，博客名为blog（按需）</div><div class="line">cd blog #进入博客文件夹下</div><div class="line">npm install #安装相关依赖</div><div class="line">hexo s #等同于hexo server，在本地启动服务器，访问地址为http://localhost:4000/</div></pre></td></tr></table></figure></p>
@@ -126,11 +128,12 @@
 <p>但是这一部分的命令相当多，操作起来不是那么方便，可以放到一个shell文件里。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">hexo generate #生成最新的public</div><div class="line">cp -R public/* .deploy/username.github.io #将public文件夹下的所有文件复制到.deploy/username.github.io文件里</div><div class="line">cd .deploy/username.github.io #进入.deploy/username.github.io文件</div><div class="line">git add . #添加所有新的文件</div><div class="line">git commit -m “update” #上传更新</div><div class="line">git push</div></pre></td></tr></table></figure></p>
 <p>在Mac中执行上述文件的过程中可能会出现Permission denied的情况。这时用命令修改该文件的操作权限即可。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod 777 deploy.sh</div></pre></td></tr></table></figure></p>
 <p>在不知道脚本执行的具体内容的情况下，千万不要乱修改权限哦，会出大事的。</p>
+<p>参考链接：<br><a href="https://segmentfault.com/a/1190000004947261#articleHeader4" target="_blank" rel="external">https://segmentfault.com/a/1190000004947261#articleHeader4</a><br><a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a><br><a href="https://pages.github.com/" target="_blank" rel="external">https://pages.github.com/</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/11/new-bolg/" data-id="cj3swc3qa0000owjhjgfilml8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/06/11/new-bolg/" data-id="cj4lai2i70001w0tnbanh1njg" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -141,7 +144,7 @@
   
   
     <a href="/2017/06/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -174,7 +177,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -199,7 +202,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Yilia<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
