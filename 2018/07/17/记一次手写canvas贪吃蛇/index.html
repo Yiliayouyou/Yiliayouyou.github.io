@@ -6,17 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Yilia</title>
+  <title>记一次手写canvas贪吃蛇 | Yilia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="生活 学习 工作 旅行 摄影">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yilia">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="本科有个暑期大作业就是贪吃蛇，那时对编程的概念太模糊，学了c++，觉得写个图形化的游戏也太复杂了。现在想来，什么语言真的没那么重要，重要的是这个游戏本身的实现思想。 我最先搭建的骨架就是让一条能上下左右运动的蛇吃食物，吃到就增长。 那这个场景里涉及到的对象就是蛇、食物。 蛇的基本方法是上下左右运动。蛇的基本属性(用方块表示蛇)：方形，图形的定位点，颜色，方块大小，长度，当前运动的方向。 食物的基本">
+<meta name="keywords" content="canvas 贪吃蛇">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记一次手写canvas贪吃蛇">
+<meta property="og:url" content="http://yoursite.com/2018/07/17/记一次手写canvas贪吃蛇/index.html">
 <meta property="og:site_name" content="Yilia">
-<meta property="og:description" content="生活 学习 工作 旅行 摄影">
+<meta property="og:description" content="本科有个暑期大作业就是贪吃蛇，那时对编程的概念太模糊，学了c++，觉得写个图形化的游戏也太复杂了。现在想来，什么语言真的没那么重要，重要的是这个游戏本身的实现思想。 我最先搭建的骨架就是让一条能上下左右运动的蛇吃食物，吃到就增长。 那这个场景里涉及到的对象就是蛇、食物。 蛇的基本方法是上下左右运动。蛇的基本属性(用方块表示蛇)：方形，图形的定位点，颜色，方块大小，长度，当前运动的方向。 食物的基本">
+<meta property="og:image" content="http://yoursite.com/2018/07/17/记一次手写canvas贪吃蛇/snake.png">
+<meta property="og:updated_time" content="2018-07-31T15:44:17.125Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yilia">
-<meta name="twitter:description" content="生活 学习 工作 旅行 摄影">
+<meta name="twitter:title" content="记一次手写canvas贪吃蛇">
+<meta name="twitter:description" content="本科有个暑期大作业就是贪吃蛇，那时对编程的概念太模糊，学了c++，觉得写个图形化的游戏也太复杂了。现在想来，什么语言真的没那么重要，重要的是这个游戏本身的实现思想。 我最先搭建的骨架就是让一条能上下左右运动的蛇吃食物，吃到就增长。 那这个场景里涉及到的对象就是蛇、食物。 蛇的基本方法是上下左右运动。蛇的基本属性(用方块表示蛇)：方形，图形的定位点，颜色，方块大小，长度，当前运动的方向。 食物的基本">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/17/记一次手写canvas贪吃蛇/snake.png">
   
     <link rel="alternative" href="/atom.xml" title="Yilia" type="application/atom+xml">
   
@@ -156,36 +160,85 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-记一次手写canvas贪吃蛇" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/17/记一次手写canvas贪吃蛇/" class="archive-article-date">
-  	<time datetime="2018-07-17T13:25:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-17</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/17/记一次手写canvas贪吃蛇/">记一次手写canvas贪吃蛇</a>
+    <h1 class="article-title" itemprop="name">
+      记一次手写canvas贪吃蛇
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/07/17/记一次手写canvas贪吃蛇/" class="archive-article-date">
+  	<time datetime="2018-07-17T13:25:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本科有个暑期大作业就是贪吃蛇，那时对编程的概念太模糊，学了c++，觉得写个图形化的游戏也太复杂了。现在想来，什么语言真的没那么重要，重要的是这个游戏本身的实现思想。</p>
+<p>我最先搭建的骨架就是让一条能上下左右运动的蛇吃食物，吃到就增长。</p>
+<p>那这个场景里涉及到的对象就是蛇、食物。</p>
+<p>蛇的基本方法是上下左右运动。<br>蛇的基本属性(用方块表示蛇)：方形，图形的定位点，颜色，方块大小，长度，当前运动的方向。</p>
+<p>食物的基本属性(用圆形表示)：圆形，图形的定位点，颜色，食物大小。</p>
+<h5 id="NO-1-蛇是怎么连续动起来的"><a href="#NO-1-蛇是怎么连续动起来的" class="headerlink" title="NO.1 蛇是怎么连续动起来的"></a>NO.1 蛇是怎么连续动起来的</h5><p>每吃到一个食物，蛇的长度就增加，这个功能点有两种实现思路。每次吃到一个点，在蛇的尾巴增加一个方块，或者每次在蛇的头部增加一个方块。</p>
+<p>后者方案比较简单。两者的区别在于，当蛇身比较长时，若蛇头经过多次方向操作，蛇尾应该接在哪个位置是不确定的；而蛇头是紧跟着方向变换的。</p>
+<p>跟着上述思路，监听键盘事件控制蛇的方向，每次吃到食物后，<strong>先移动一步</strong>，蛇头上再增加一个方块，贪吃蛇就可以连续的动起来了。</p>
+<ul>
+<li>如果蛇是朝着4个方向运动的，设想蛇长3，往反向走一步，蛇长变成了2，再往垂直的方向走几步，蛇头跑了。。所以，其实蛇只能往三个方向走，当前方向，垂直的两个方向。往反方向运动时不可以往后走，当然更不能往前走。</li>
+<li>上述“吃到食物后，先移动一步”，理由在于如果直接增加长度，会出现吃一个边缘的点来不及拐弯的情况。</li>
+</ul>
+<h5 id="NO-2-游戏结束规则"><a href="#NO-2-游戏结束规则" class="headerlink" title="NO.2 游戏结束规则"></a>NO.2 游戏结束规则</h5><p>游戏结束规则：</p>
+<ol>
+<li>撞墙</li>
+<li>撞到自己身体的任何一部分</li>
+</ol>
+<p>撞墙简单，就是四个边界。<br>撞到自己前一定是运动后的，所以只要图形定位点重合，那就说明撞上并且图形重合了。</p>
+<p>检测代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">checkIsDead(ctx) &#123;</div><div class="line">    let firstSnakeBlock = this.snakeBlocks[0];</div><div class="line">    if (firstSnakeBlock.x &lt; 0 || firstSnakeBlock.x &gt; 800 || firstSnakeBlock.y &lt; 0 || firstSnakeBlock.y &gt; 600) &#123;</div><div class="line">        return true;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    if (this.snakeLen &gt; 1) &#123;</div><div class="line">        for (let i = 1; i &lt; this.snakeBlocks.length; i++) &#123;</div><div class="line">            let snakeBlock = this.snakeBlocks[i];</div><div class="line"></div><div class="line">            if ((Math.abs(firstSnakeBlock.x - snakeBlock.x) === 0) &amp;&amp; (Math.abs(firstSnakeBlock.y - snakeBlock.y) === 0)) &#123;</div><div class="line">                return true;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    return false;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h5 id="NO-3-怎么才算吃到食物"><a href="#NO-3-怎么才算吃到食物" class="headerlink" title="NO.3 怎么才算吃到食物"></a>NO.3 怎么才算吃到食物</h5><p>这个可能根据食物的形状判断标准略有不同，基本上就是蛇头覆盖食物某些范围就认为吃到了。我是用圆形表示食物的，所以认为盖过圆心就吃到了。</p>
+<p>检测代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function checkFood(food, snake) &#123;</div><div class="line">    let snakeHead = snake.snakeBlocks[0];</div><div class="line">    if ((food.x &gt;= snakeHead.x) &amp;&amp; (food.x &lt;= snakeHead.x + snake.size) &amp;&amp; (food.y &gt;= snakeHead.y) &amp;&amp; (food.y &lt;= snakeHead.y + snake.size)) &#123;</div><div class="line">        return false; // 被吃</div><div class="line">    &#125; else &#123;</div><div class="line">        return true;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>其实完成上述几个功能，基本功能算是完成了。其他的都是如何让这个游戏变得更有趣的部分了。试想，一个完全在你键盘掌控下的贪吃蛇，玩起来是不是略无聊。</p>
+<h5 id="NO-4-得分与等级"><a href="#NO-4-得分与等级" class="headerlink" title="NO.4 得分与等级"></a>NO.4 得分与等级</h5><p>所谓等级，其实是由速度控制，等级越高，速度越快，难度越高。这个功能，个人感觉不难，也就没做了，其实就是懒。</p>
+<h5 id="NO-5-不正经的彩色蛇"><a href="#NO-5-不正经的彩色蛇" class="headerlink" title="NO.5 不正经的彩色蛇"></a>NO.5 不正经的彩色蛇</h5><p>最后，我嫌他颜色略丑，加了个彩色的，结果，他就变成了一条不正经的蛇。<br>这里参看了尤雨溪个人博库页面的颜色选取，可能这个场景不太适合这么取色，导致我的蛇最后看着像一条彩带。不过这种有规律的取色摆在一起，颜色还是挺和谐的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">let v = Math.cos;</div><div class="line">r = 0;</div><div class="line">u = Math.PI * 2;</div><div class="line">r -= u / -50;</div><div class="line">newFoodColor = &apos;rgb(&apos; + Number(v(r) * 127 + 128) +&apos;,&apos;+ Number(v(r + u / 3) * 127 + 128) +&apos;,&apos;+ Number(v(r + u / 3 * 2) * 127 + 128) +&apos;)&apos;</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/Yiliayouyou/canvas/blob/master/canvas%E5%B0%8F%E6%B8%B8%E6%88%8F/snake.html" target="_blank" rel="external">最后附上完整代码的地址</a>，欢迎试玩，槽点应该狠多吧。</p>
+<img src="/2018/07/17/记一次手写canvas贪吃蛇/snake.png" alt="贪吃蛇" title="贪吃蛇">
+<p>这是一条吃啥长啥的贪吃蛇。。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -197,186 +250,89 @@
 		</ul>
 	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
       
-        </div></section>
+
       
+
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/03/xiapu/" class="archive-article-date">
-  	<time datetime="2017-10-03T01:54:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/03/xiapu/">霞浦看山吃海追日出</a>
-    </h1>
-  
+      </div>
+    </span>
+  </div>
+</div>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">游记</a>
-        		</li>
-      		
-		</ul>
-	</div>
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/07/17/记一次手写canvas贪吃蛇/" alt="微信分享二维码">
+    </div>
+</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/11/micro-fiction/" class="archive-article-date">
-  	<time datetime="2017-07-10T16:04:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-11</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/11/micro-fiction/">亲情</a>
-    </h1>
+  
+    <a href="/2017/10/03/xiapu/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">霞浦看山吃海追日出</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微小说</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/01/july/" class="archive-article-date">
-  	<time datetime="2017-07-01T13:29:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/01/july/">7月，夏天来了</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/11/new-bolg/" class="archive-article-date">
-  	<time datetime="2017-06-11T15:40:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/11/new-bolg/">如何用Hexo + Github Page快速构建个人博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/11/hello-world/" class="archive-article-date">
-  	<time datetime="2017-06-11T14:04:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/11/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -399,8 +355,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
