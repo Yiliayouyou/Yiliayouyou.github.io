@@ -15,12 +15,12 @@
 <meta property="og:url" content="http://yoursite.com/2018/07/17/记一次手写canvas贪吃蛇/index.html">
 <meta property="og:site_name" content="Yilia">
 <meta property="og:description" content="本科有个暑期大作业就是贪吃蛇，那时对编程的概念太模糊，学了c++，觉得写个图形化的游戏也太复杂了。现在想来，什么语言真的没那么重要，重要的是这个游戏本身的实现思想。 我最先搭建的骨架就是让一条能上下左右运动的蛇吃食物，吃到就增长。 那这个场景里涉及到的对象就是蛇、食物。 蛇的基本方法是上下左右运动。蛇的基本属性(用方块表示蛇)：方形，图形的定位点，颜色，方块大小，长度，当前运动的方向。 食物的基本">
-<meta property="og:image" content="http://yoursite.com/2018/07/17/记一次手写canvas贪吃蛇/snake.png">
-<meta property="og:updated_time" content="2018-07-31T15:44:17.125Z">
+<meta property="og:image" content="http://yoursite.com/2018/07/17/记一次手写canvas贪吃蛇/snake.jpeg">
+<meta property="og:updated_time" content="2018-08-01T15:24:06.865Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记一次手写canvas贪吃蛇">
 <meta name="twitter:description" content="本科有个暑期大作业就是贪吃蛇，那时对编程的概念太模糊，学了c++，觉得写个图形化的游戏也太复杂了。现在想来，什么语言真的没那么重要，重要的是这个游戏本身的实现思想。 我最先搭建的骨架就是让一条能上下左右运动的蛇吃食物，吃到就增长。 那这个场景里涉及到的对象就是蛇、食物。 蛇的基本方法是上下左右运动。蛇的基本属性(用方块表示蛇)：方形，图形的定位点，颜色，方块大小，长度，当前运动的方向。 食物的基本">
-<meta name="twitter:image" content="http://yoursite.com/2018/07/17/记一次手写canvas贪吃蛇/snake.png">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/17/记一次手写canvas贪吃蛇/snake.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="Yilia" type="application/atom+xml">
   
@@ -208,7 +208,7 @@
 <h5 id="NO-5-不正经的彩色蛇"><a href="#NO-5-不正经的彩色蛇" class="headerlink" title="NO.5 不正经的彩色蛇"></a>NO.5 不正经的彩色蛇</h5><p>最后，我嫌他颜色略丑，加了个彩色的，结果，他就变成了一条不正经的蛇。<br>这里参看了尤雨溪个人博库页面的颜色选取，可能这个场景不太适合这么取色，导致我的蛇最后看着像一条彩带。不过这种有规律的取色摆在一起，颜色还是挺和谐的。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">let v = Math.cos;</div><div class="line">r = 0;</div><div class="line">u = Math.PI * 2;</div><div class="line">r -= u / -50;</div><div class="line">newFoodColor = &apos;rgb(&apos; + Number(v(r) * 127 + 128) +&apos;,&apos;+ Number(v(r + u / 3) * 127 + 128) +&apos;,&apos;+ Number(v(r + u / 3 * 2) * 127 + 128) +&apos;)&apos;</div></pre></td></tr></table></figure>
 <p><a href="https://github.com/Yiliayouyou/canvas/blob/master/canvas%E5%B0%8F%E6%B8%B8%E6%88%8F/snake.html" target="_blank" rel="external">最后附上完整代码的地址</a>，欢迎试玩，槽点应该狠多吧。</p>
-<img src="/2018/07/17/记一次手写canvas贪吃蛇/snake.png" alt="贪吃蛇" title="贪吃蛇">
+<img src="/2018/07/17/记一次手写canvas贪吃蛇/snake.jpeg" alt="贪吃蛇" title="贪吃蛇">
 <p>这是一条吃啥长啥的贪吃蛇。。</p>
 
       
